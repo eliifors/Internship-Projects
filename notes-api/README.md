@@ -1,31 +1,16 @@
-# 📝 Not Defteri API (Node.js + Express + MongoDB)
+# Küçük Blog Sistemi (Node.js)
 
-Bu proje, Node.js kullanılarak geliştirilmiş basit bir **Not Defteri (CRUD) API’si**dir.  
-Kullanıcılar not ekleyebilir, güncelleyebilir, silebilir ve tüm notları listeleyebilir.  
+Bu proje, Node.js kullanılarak geliştirilmiş basit bir blog API’sidir.  
+Kullanıcılar kayıt olabilir, giriş yapabilir (JWT ile) ve blog yazısı ekleyebilir.  
+Blog yazılarını herkes görüntüleyebilir.
 
----
+## Kullanılan Teknolojiler
+- Node.js & Express
+- MongoDB & Mongoose
+- JWT (kimlik doğrulama)
+- Bcrypt (şifre güvenliği)
 
-## 🚀 Özellikler
-- Yeni not ekleme
-- Tüm notları listeleme
-- Not güncelleme
-- Not silme
-- MongoDB üzerinde veri saklama
-
----
-
-## 🛠 Kullanılan Teknolojiler
-- **Node.js** – Backend geliştirme
-- **Express.js** – Web framework
-- **MongoDB** – Veritabanı
-- **Mongoose** – MongoDB için ODM
-- **Nodemon** – Otomatik sunucu yeniden başlatma
-
----
-
-## 📂 Proje Kurulumu
-
-### 1. Kodu Çekme
+## Çalıştırma
 ```bash
-git clone <repo-url>
-cd notes-api
+npm install
+npm start

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Gerçek Zamanlı Chat</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="container">
+<aside class="sidebar">
+<h2>Chat</h2>
+<div id="userArea" class="user-area">
+<div class="login">
+<input id="usernameInput" placeholder="Kullanıcı adınızı girin" maxlength="30" />
+<button id="joinBtn">Katıl</button>
+</div>
+<div id="onlineList" class="online-list" hidden>
+<h3>Çevrimiçi</h3>
+<ul id="users"></ul>
+</div>
+</div>
+</aside>
+
+<main class="chat-area">
+<div id="messages" class="messages"></div>
+
+<div class="composer">
+<input id="messageInput" placeholder="Mesaj yaz..." autocomplete="off" />
+<button id="sendBtn">Gönder</button>
+</div>
+
+<div id="typing" class="typing"></div>
+</main>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/main.js"></script>
+</body>
+</html>

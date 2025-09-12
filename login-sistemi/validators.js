@@ -1,0 +1,3 @@
+//validation kuralları
+
+module.exports = {};

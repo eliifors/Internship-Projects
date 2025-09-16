@@ -16,10 +16,10 @@ app.use(bodyParser.json());
 // Routes
 app.use('/api/url', require('./routes/url'));
 
-// Redirect route (must be after API routes to avoid collision)
+
 app.get('/:shortId', require('./controllers/urlController').redirect);
 
-// Health
+
 app.get('/', (req, res) => res.send('URL Kısaltıcı çalışıyor'));
 
 const PORT = process.env.PORT || 5000;
